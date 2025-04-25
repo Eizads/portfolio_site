@@ -7,7 +7,8 @@ export default function ProjectButton() {
 
   return (
     <button 
-      className="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg transition-colors"
+      className="px-6 py-3 bg-dark-primary border border-dark-accent hover:bg-dark-button text-white rounded-lg transition-colors" 
+
       onClick={scrollToProjects}
     >
       View Projects
