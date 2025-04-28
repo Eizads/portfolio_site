@@ -1,0 +1,13 @@
+{
+    "rewrites": [
+      {
+        "source": "/react-stocks-dashboard/:match*",
+        "destination": "https://react-stocks-dashboard.vercel.app/:match*"
+      },
+      {
+        "source": "/vue-stocks-dashboard/:match*",
+        "destination": "https://stocks-dashboard-vert.vercel.app/#/:match*"
+      }
+    ]
+  }
+  
