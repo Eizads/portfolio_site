@@ -29,7 +29,7 @@
         "destination": "https://react-stocks-dashboard.vercel.app/api/ws/:path*"
       },
       {
-        "source": "/api/:path*",
+        "source": "/react-stocks-dashboard/api/:path*",
         "destination": "https://react-stocks-dashboard.vercel.app/api/:path*"
       },
       {
