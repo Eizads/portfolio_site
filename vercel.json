@@ -5,12 +5,16 @@
         "destination": "https://react-stocks-dashboard.vercel.app/react-stocks-dashboard"
       },
       {
-        "source": "/react-stocks-dashboard/:match*",
-        "destination": "https://react-stocks-dashboard.vercel.app/react-stocks-dashboard/:match*"
+        "source": "/react-stocks-dashboard/:path*",
+        "destination": "https://react-stocks-dashboard.vercel.app/react-stocks-dashboard/:path*"
       },
       {
-        "source": "/react-stocks-dashboard/_next/static/:match*",
-        "destination": "https://react-stocks-dashboard.vercel.app/react-stocks-dashboard/_next/static/:match*"
+        "source": "/react-stocks-dashboard/_next/:path*",
+        "destination": "https://react-stocks-dashboard.vercel.app/_next/:path*"
+      },
+      {
+        "source": "/_next/:path*",
+        "destination": "https://react-stocks-dashboard.vercel.app/_next/:path*"
       },
       {
         "source": "/vue-stocks-dashboard/:match*",
