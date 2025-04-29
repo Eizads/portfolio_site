@@ -17,6 +17,22 @@
         "destination": "https://react-stocks-dashboard.vercel.app/_next/:path*"
       },
       {
+        "source": "/api/stocks/:path*",
+        "destination": "https://react-stocks-dashboard.vercel.app/api/stocks/:path*"
+      },
+      {
+        "source": "/api/search",
+        "destination": "https://react-stocks-dashboard.vercel.app/api/search"
+      },
+      {
+        "source": "/api/ws/:path*",
+        "destination": "https://react-stocks-dashboard.vercel.app/api/ws/:path*"
+      },
+      {
+        "source": "/api/:path*",
+        "destination": "https://react-stocks-dashboard.vercel.app/api/:path*"
+      },
+      {
         "source": "/vue-stocks-dashboard/:match*",
         "destination": "https://stocks-dashboard-vert.vercel.app/#/:match*"
       }
