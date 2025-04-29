@@ -9,8 +9,8 @@
         "destination": "https://react-stocks-dashboard.vercel.app/react-stocks-dashboard/:match*"
       },
       {
-        "source": "/react-stocks-dashboard/_next/:match*",
-        "destination": "https://react-stocks-dashboard.vercel.app/react-stocks-dashboard/_next/:match*"
+        "source": "/react-stocks-dashboard/_next/static/:match*",
+        "destination": "https://react-stocks-dashboard.vercel.app/react-stocks-dashboard/_next/static/:match*"
       },
       {
         "source": "/vue-stocks-dashboard/:match*",
