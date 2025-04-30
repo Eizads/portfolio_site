@@ -24,7 +24,7 @@ export default function Home() {
             </div>
             <div className="order-first md:order-last">
             
-              <h2 className="text-xl sm:text-xl font-bold mb-8 text-dark-accent" data-aos="fade-left"> Hi, I&apos;m Sogol,</h2>
+              <h2 className="text-xl sm:text-xl font-bold mb-8 text-dark-accent mt-[100px] md:mt-0" data-aos="fade-left"> Hi, I&apos;m Sogol,</h2>
 
               <p className="text-dark-accent text-lg leading-relaxed mb-6" data-aos="fade-left" data-aos-delay="200">
             
@@ -41,7 +41,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className='w-full max-w-6xl my-10 flex items-center gap-4'>
+        <div className='w-full max-w-6xl my-10 flex flex-col md:flex-row items-start md:items-center gap-4'>
           <div className='text-white text-lg leading-relaxed flex items-center gap-2'>
             You can also <span className='text-primary '>find me here:</span>
             <div className="flex gap-4">
