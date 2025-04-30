@@ -80,7 +80,7 @@ export default function Home() {
                   This version is built using React, Next.js, TypeScript, Tailwind CSS, Shadcn UI, and Chart.js.
                       </p>
                 <div className="flex gap-4">
-                  <a href="#" className="text-white hover:text-primary">View Live</a>
+                  <a href="https://sogol.dev/react-stocks-dashboard" target='_blank' className="text-white hover:text-primary">View Live</a>
                   <a href="https://github.com/Eizads/react_stocks_dashboard" target='_blank' className="text-secondary hover:text-primary">Source Code</a>
                 </div>
               </div>
@@ -104,7 +104,7 @@ export default function Home() {
                 This version is built using Vue3, Quasar, vue-chart.js and Chart.js. 
                 </p>
                 <div className="flex gap-4">
-                <a href="#" className="text-white hover:text-primary">View Live</a>
+                <a href="https://sogol.dev/vue-stocks-dashboard" target='_blank' className="text-white hover:text-primary">View Live</a>
                 <a href="https://github.com/Eizads/stocks_dashboard" target="_blank" className="text-secondary hover:text-primary">Source Code</a>
                 </div>
               </div>

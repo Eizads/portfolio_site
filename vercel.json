@@ -35,7 +35,16 @@
       {
         "source": "/vue-stocks-dashboard/:match*",
         "destination": "https://stocks-dashboard-vert.vercel.app/#/:match*"
+      },
+      {
+        "source": "/vue-stocks-dashboard/api/:match*",
+        "destination": "https://vue-stocks-dashboard.vercel.app/api/:match*"
+      },
+      {
+        "source": "/vue-stocks-dashboard/assets/:match*",
+        "destination": "https://vue-stocks-dashboard.vercel.app/assets/:match*"
       }
+     
     ]
   }
   
