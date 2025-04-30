@@ -44,8 +44,36 @@
         "source": "/vue-stocks-dashboard/assets/:match*",
         "destination": "https://vue-stocks-dashboard.vercel.app/assets/:match*"
       }
-     
+    ],
+    "headers": [
+      {
+        "source": "/vue-stocks-dashboard/(.*)\\.js",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "application/javascript"
+          }
+        ]
+      },
+      {
+        "source": "/vue-stocks-dashboard/(.*)\\.css",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "text/css"
+          }
+        ]
+      },
+      {
+        "source": "/vue-stocks-dashboard/(.*)\\.html",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "text/html"
+          }
+        ]
+      }
     ]
-  }
+}
   
   
