@@ -33,25 +33,34 @@
         "destination": "https://react-stocks-dashboard.vercel.app/api/:path*"
       },
       {
-        "source": "/vue-stocks-dashboard/:match*",
-        "destination": "https://stocks-dashboard-vert.vercel.app/#/:match*"
+        "source": "/vue-stocks-dashboard",
+        "destination": "https://stocks-dashboard-vert.vercel.app"
       },
       {
-        "source": "/vue-stocks-dashboard/api/:match*",
-        "destination": "https://vue-stocks-dashboard.vercel.app/api/:match*"
-      },
-      {
-        "source": "/vue-stocks-dashboard/assets/:match*",
-        "destination": "https://vue-stocks-dashboard.vercel.app/assets/:match*"
+        "source": "/vue-stocks-dashboard/:path*",
+        "destination": "https://stocks-dashboard-vert.vercel.app/:path*"
       }
     ],
     "headers": [
+      {
+        "source": "/vue-stocks-dashboard/(.*)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=31536000, immutable"
+          }
+        ]
+      },
       {
         "source": "/vue-stocks-dashboard/(.*)\\.js",
         "headers": [
           {
             "key": "Content-Type",
-            "value": "application/javascript"
+            "value": "application/javascript; charset=utf-8"
+          },
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=31536000, immutable"
           }
         ]
       },
@@ -60,7 +69,11 @@
         "headers": [
           {
             "key": "Content-Type",
-            "value": "text/css"
+            "value": "text/css; charset=utf-8"
+          },
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=31536000, immutable"
           }
         ]
       },
@@ -69,7 +82,11 @@
         "headers": [
           {
             "key": "Content-Type",
-            "value": "text/html"
+            "value": "text/html; charset=utf-8"
+          },
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=0, must-revalidate"
           }
         ]
       }
