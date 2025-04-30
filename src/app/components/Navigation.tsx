@@ -2,10 +2,10 @@
 import ContactButton from './ContactButton';
 export default function Navigation() {
   return (
-    <nav className="fixed w-full bg-transparent backdrop-blur-sm z-50">
-      <div className="max-w-6xl mx-auto sm:px-6 lg:px-0">
+    <nav className="fixed w-full bg-transparent backdrop-blur-sm z-50 overflow-x-hidden">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-0">
         <div className="flex items-center justify-between h-16">
-          <a href="#" className="ml-4 md:ml-0 text-xl font-bold text-primary">
+          <a href="#" className="text-xl font-bold text-primary">
             Sogol Eizad
           </a>
           <div className="hidden sm:block">
