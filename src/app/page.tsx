@@ -4,7 +4,7 @@ import ProjectButton from './components/ProjectButton';
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-dark-primary text-white">
+    <main className="min-h-screen bg-dark-primary text-white overflow-x-hidden">
       {/* Hero Section */}
       <section className="min-h-screen flex flex-col justify-between items-center px-4 sm:px-6 lg:px-8">
         <div className="flex-1 flex items-center">
