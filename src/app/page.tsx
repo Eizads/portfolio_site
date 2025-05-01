@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-dark-primary text-white overflow-x-hidden">
       {/* Hero Section */}
-      <section className="min-h-screen flex flex-col justify-between items-center px-4 sm:px-6 lg:px-8">
+      <section className="min-h-screen flex flex-col justify-between items-center px-4 sm:px-6 lg:px-8" id="about">
         <div className="flex-1 flex items-center">
           <div className="max-w-6xl w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="text-start"data-aos="fade-up">
@@ -67,7 +67,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">Stocks Dashboard <span className='text-primary'>Project</span></h2>
           <p className='text-dark-accent text-lg mb-8'>
-          This project is a live stock market dashboard that streams real-time financial data using WebSockets. It was built to highlight my front-end development skills, with a focus on performance optimization, responsive UI design, and seamless API integration. The dashboard uses the free tier of the Twelve Data API to fetch live stock data when available, and falls back on historical data when live updates are not provided. It also uses local storage to persist data across sessions for a smoother user experience. The project includes two versions:
+          This project is a live stock market dashboard that streams real-time financial data using WebSockets. It was built to highlight my front-end development skills, with a focus on performance optimization, responsive UI design, and seamless API integration. The dashboard uses the free tier of the Twelve Data API with limited stock availability to fetch live stock data when available, and falls back on historical data when live updates are not provided. It also uses local storage to persist data across sessions for a smoother user experience. The project includes two versions:
 
 
           </p>
