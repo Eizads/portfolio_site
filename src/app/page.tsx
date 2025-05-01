@@ -33,7 +33,7 @@ export default function Home() {
             turning complex problems into simple, beautiful solutions.
           </p>
           <p className="text-dark-accent text-lg leading-relaxed mb-6" data-aos="fade-left" data-aos-delay="300">
-          Previously, I&apos;ve developed custom learning experience courses for companies like Apple, Loblaw, and Citibank, integrating them seamlessly into their LMS platforms.
+          Previously, I&apos;ve developed custom learning experience courses for companies like Apple, Loblaws, and Citibank, integrating them seamlessly into their LMS platforms.
           </p>
           <p className="text-dark-accent text-lg leading-relaxed" data-aos="fade-left" data-aos-delay="400">
           Outside of coding, I enjoy exploring emerging technologies, spending quality time with friends and family, and traveling.
@@ -101,7 +101,7 @@ export default function Home() {
               <div className="order-1 md:order-2 md:col-span-2 bg-dark-button text-dark-secondary p-4 rounded-md md:absolute md:bottom-0 md:right-0 md:z-10 md:w-1/3" data-aos="fade-left" data-aos-delay="200">
                 <h3 className="text-xl font-semibold mb-2 text-white"><span className='text-primary'>Vue3</span> Version</h3>
                 <p className="mb-4 text-gray-300">
-                This version is built using Vue3, Quasar, vue-chart.js and Chart.js. 
+                This version is built using Vue3, Quasar, Vue-chart-3 and Chart.js. 
                 </p>
                 <div className="flex gap-4">
                 <a href="https://sogol.dev/vue-stocks-dashboard" target='_blank' className="text-white hover:text-primary">View Live</a>
