@@ -1,6 +1,22 @@
 {
     "rewrites": [
       {
+        "source": "/buildflow-app",
+        "destination": "https://buildflow-app-five.vercel.app/buildflow-app"
+      },
+      {
+        "source": "/buildflow-app/:path*",
+        "destination": "https://buildflow-app-five.vercel.app/buildflow-app/:path*"
+      },
+      {
+        "source": "/buildflow-app/_next/:path*",
+        "destination": "https://buildflow-app-five.vercel.app/_next/:path*"
+      },
+      {
+        "source": "/_next/:path*",
+        "destination": "https://buildflow-app-five.vercel.app/_next/:path*"
+      },
+      {
         "source": "/react-stocks-dashboard",
         "destination": "https://react-stocks-dashboard.vercel.app/react-stocks-dashboard"
       },

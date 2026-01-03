@@ -109,6 +109,24 @@ export default function Home() {
                 </div>
               </div>
             </div>
+                  {/* BuildFlow App Project - Text then Image */}
+                  <div className="grid grid-cols-1 md:grid-cols-6 gap-8 items-center relative">
+              <div className="order-1 md:order-1 md:col-span-2 bg-dark-button shadow-md text-dark-secondary p-4 rounded-md md:absolute md:bottom-0 md:left-0 md:z-10 md:w-1/3" data-aos="fade-up">
+                <h3 className="text-xl font-semibold text-white mb-2"><span className='text-primary'>BuildFlow</span> App</h3>
+                <p className="mb-4 text-gray-300">
+                  This app is built using React, Next.js, TypeScript, Tailwind CSS, Shadcn UI, and Clerk.
+                      </p>
+                <div className="flex gap-4">
+                  <a href="https://sogol.dev/buildflow-app" target='_blank' className="text-white hover:text-primary">View Live</a>
+                    <a href="https://github.com/Eizads/buildflow-app" target='_blank' className="text-secondary hover:text-primary">Source Code</a>
+                </div>
+              </div>
+              <div className="order-2 md:order-2 md:col-span-5 md:col-start-2 flex justify-end" data-aos="fade-left" data-aos-delay="200">
+                <div className="aspect-video bg-gray-700 mb-4 relative w-full">
+                  <Image src="/project-1.png" alt="React Version" fill className="object-fit rounded-sm" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
