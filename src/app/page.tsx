@@ -123,7 +123,7 @@ export default function Home() {
               </div>
               <div className="order-2 md:order-2 md:col-span-5 md:col-start-2 flex justify-end" data-aos="fade-left" data-aos-delay="200">
                 <div className="aspect-video bg-gray-700 mb-4 relative w-full">
-                  <Image src="/project-1.png" alt="React Version" fill className="object-fit rounded-sm" />
+                  <Image src="/buildflow-app.png" alt="React Version" fill className="object-fit rounded-sm" />
                 </div>
               </div>
             </div>
