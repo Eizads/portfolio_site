@@ -117,7 +117,7 @@ export default function Home() {
                   This app is built using React, Next.js, TypeScript, Tailwind CSS, Shadcn UI, and Clerk.
                       </p>
                 <div className="flex gap-4">
-                  <a href="https://sogol.dev/buildflow-app" target='_blank' className="text-white hover:text-primary">View Live</a>
+                  <a href="https://buildflow-app-five.vercel.app" target='_blank' className="text-white hover:text-primary">View Live</a>
                     <a href="https://github.com/Eizads/buildflow-app" target='_blank' className="text-secondary hover:text-primary">Source Code</a>
                 </div>
               </div>
