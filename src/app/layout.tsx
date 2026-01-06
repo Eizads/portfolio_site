@@ -4,7 +4,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Navigation from './components/Navigation';
+import Navigation from '@/components/common/Navigation';
 
 const inter = Inter({ subsets: ["latin"] });
 
