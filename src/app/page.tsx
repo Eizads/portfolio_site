@@ -35,7 +35,7 @@ export default function Home() {
         "A community platform for developers to share and discover projects with voting and admin moderation.",
       description:
         "BuildFlow is a community-driven platform where developers and creators can share their projects with the world. Users can submit their projects, browse a curated collection of featured products, and vote on their favorites. The platform features an admin approval system to ensure quality submissions, an explore page to discover new projects, and detailed product pages with voting functionality. Built with modern web technologies including Next.js, TypeScript, and Clerk authentication, BuildFlow showcases responsive design, real-time voting with optimistic UI updates, internationalization, and seamless user experience.",
-      image: "/buildflow-app.png",
+      image: "/buildflow-app1.png",
       link: "https://buildflow-app-five.vercel.app",
       source: "https://github.com/Eizads/buildflow-app",
       tech: [
