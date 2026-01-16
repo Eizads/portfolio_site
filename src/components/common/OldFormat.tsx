@@ -146,8 +146,8 @@ export default function OldFormat() {
             >
               <div className="aspect-video bg-gray-700 mb-4 relative w-full">
                 <Image
-                  src="/buildflow-app.png"
-                  alt="React Version"
+                  src="/buildflow-app1.png"
+                  alt="BuildFlow App"
                   fill
                   className="object-fit rounded-sm"
                 />

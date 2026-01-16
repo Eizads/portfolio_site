@@ -24,6 +24,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { CircleIcon, ExternalLinkIcon, GithubIcon } from "lucide-react";
+import ThreeScene from "@/components/ThreeScene";
 
 export default function Home() {
   const projects = [
@@ -33,7 +34,7 @@ export default function Home() {
       subtitle:
         "A community platform for developers to share and discover projects with voting and admin moderation.",
       description:
-        "BuildFlow is a community-driven platform where developers and creators can share their projects with the world. Users can submit their projects, browse a curated collection of featured products, and vote on their favorites. The platform features an admin approval system to ensure quality submissions, an explore page to discover new projects, and detailed product pages with voting functionality. Built with modern web technologies including Next.js, TypeScript, and Clerk authentication, BuildFlow showcases responsive design, real-time voting with optimistic UI updates, and seamless user experience.",
+        "BuildFlow is a community-driven platform where developers and creators can share their projects with the world. Users can submit their projects, browse a curated collection of featured products, and vote on their favorites. The platform features an admin approval system to ensure quality submissions, an explore page to discover new projects, and detailed product pages with voting functionality. Built with modern web technologies including Next.js, TypeScript, and Clerk authentication, BuildFlow showcases responsive design, real-time voting with optimistic UI updates, internationalization, and seamless user experience.",
       image: "/buildflow-app.png",
       link: "https://buildflow-app-five.vercel.app",
       source: "https://github.com/Eizads/buildflow-app",
@@ -47,6 +48,7 @@ export default function Home() {
         "Neon",
         "Clerk",
         "Zod",
+        "next-intl",
       ],
     },
     {
@@ -84,7 +86,10 @@ export default function Home() {
   ];
 
   return (
-    <main className="min-h-screen bg-dark-primary text-white overflow-x-hidden">
+    <main className="min-h-screen  text-white overflow-x-hidden">
+      {/* Three.js Starry Background */}
+      <ThreeScene />
+
       {/* Hero Section */}
       <section
         className="min-h-screen flex flex-col justify-between items-center px-4 sm:px-6 lg:px-8"
