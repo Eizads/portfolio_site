@@ -297,7 +297,7 @@ export default function Home() {
                     <div className="flex flex-col md:flex-row gap-4 pt-4">
                       <Button
                         variant="default"
-                        className="text-white hover:text-white/80 transition-colors"
+                        className="text-white hover:bg-white/80 transition-colors"
                       >
                         <Link
                           href={project.link}
@@ -312,7 +312,7 @@ export default function Home() {
                       </Button>
                       <Button
                         variant="outline"
-                        className="text-secondary bg-transparent border-secondary hover:bg-secondary/10"
+                        className="text-secondary bg-transparent border-secondary hover:bg-secondary/10 hover:text-white hover:border-white"
                       >
                         <Link
                           href={project.source}
@@ -333,6 +333,25 @@ export default function Home() {
                               />
                             </svg>
                             <span>Source Code</span>
+                          </div>
+                        </Link>
+                      </Button>
+                      <Button
+                        variant="outline"
+                        className="text-secondary bg-transparent border-secondary hover:bg-secondary/10 hover:text-white hover:border-white"
+                      >
+                        <Link href="/process" rel="noopener noreferrer">
+                          <div className="flex items-center gap-2">
+                            <span
+                              aria-label="UX Process"
+                              className="block w-4 h-4 bg-current"
+                              style={{
+                                mask: "url('/figma_icon.svg') center / contain no-repeat",
+                                WebkitMask:
+                                  "url('/figma_icon.svg') center / contain no-repeat",
+                              }}
+                            />
+                            <span>UX Process</span>
                           </div>
                         </Link>
                       </Button>
