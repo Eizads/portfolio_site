@@ -91,7 +91,7 @@ export default function ProcessPage() {
     <main className="min-h-screen bg-dark-primary text-white overflow-x-hidden">
       <section
         id="top"
-        className="px-4 sm:px-6 lg:px-8 h-screen/2 border-b border-white/10 backdrop-blur-md xl:backdrop-blur-none "
+        className="relative px-4 sm:px-6 lg:px-8 h-screen/2 border-b border-white/10 backdrop-blur-md xl:backdrop-blur-none bg-overlay-dark"
         style={{
           backgroundImage: `url('/stocks-dashboard-ux/comp-bg4.png')`,
           backgroundSize: "contain",
@@ -99,7 +99,11 @@ export default function ProcessPage() {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="backdrop-blur-md xl:backdrop-blur-none h-full py-20">
+        <div
+          className="absolute inset-0 bg-dark-primary/80 lg:hidden"
+          aria-hidden="true"
+        />
+        <div className="relative z-10 backdrop-blur-md  xl:backdrop-blur-none h-full py-16 md:py-20">
           <div className="max-w-6xl mx-auto ">
             <div className="grid lg:grid-cols-[1fr_0.8fr] gap-12 items-end ">
               <div>
@@ -120,7 +124,7 @@ export default function ProcessPage() {
         </div>
       </section>
 
-      <section className="px-4 sm:px-6 lg:px-8 py-16">
+      <section className="px-4 sm:px-6 lg:px-8 py-12 md:py-16">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-[0.8fr_1.2fr] gap-10">
           <div>
             <p className="text-secondary uppercase tracking-[0.3em] text-sm mb-4">
@@ -154,10 +158,10 @@ export default function ProcessPage() {
         </div>
       </section>
 
-      <section className="px-4 sm:px-6 lg:px-8 py-24 ">
-        <div className="bg-dark-tertiary border border-dark-secondary/10 rounded-4xl m-5 py-16">
-          <div className="max-w-6xl mx-auto rounded-3xl p-10">
-            <div className="max-w-3xl mb-12">
+      <section className="px-4 sm:px-6 lg:px-8 py-12 md:py-24">
+        <div className="bg-dark-tertiary border border-dark-secondary/10 rounded-4xl md:m-5 py-8 md:py-16">
+          <div className="max-w-6xl mx-auto rounded-3xl p-5 sm:p-7 md:p-10">
+            <div className="max-w-3xl mb-10 md:mb-12">
               <p className="text-primary uppercase tracking-[0.3em] text-sm mb-4">
                 The Approach
               </p>
@@ -176,7 +180,7 @@ export default function ProcessPage() {
               {processSteps.map((step) => (
                 <article
                   key={step.title}
-                  className="bg-dark-primary border border-white/10 rounded-3xl p-7 hover:border-primary/40 transition-colors"
+                  className="bg-dark-primary border border-white/10 rounded-3xl p-5 md:p-7 hover:border-primary/40 transition-colors"
                 >
                   <p className="text-secondary text-sm uppercase tracking-[0.25em] mb-5">
                     {step.eyebrow}
@@ -192,9 +196,9 @@ export default function ProcessPage() {
         </div>
       </section>
 
-      <section className="px-4 sm:px-6 lg:px-8 py-16">
+      <section className="px-4 sm:px-6 lg:px-8 py-12 md:py-16">
         <div className="max-w-6xl mx-auto">
-          <div className="max-w-3xl mb-12">
+          <div className="max-w-3xl mb-10 md:mb-12">
             <p className="text-primary uppercase tracking-[0.3em] text-sm mb-4">
               Design Artifacts
             </p>
@@ -208,10 +212,10 @@ export default function ProcessPage() {
             </p>
           </div>
 
-          <div className="space-y-10">
+          <div className="space-y-8 md:space-y-10">
             <article
               key={artifacts[0].title}
-              className="grid lg:grid-cols-12 gap-6 items-center bg-dark-secondary border border-white/10 rounded-3xl p-5 sm:p-7"
+              className="grid lg:grid-cols-12 gap-6 items-center bg-dark-secondary border border-white/10 rounded-3xl p-5 md:p-7"
             >
               <div className="lg:col-span-6 lg:col-start-4 text-center lg:text-left">
                 <p className="text-secondary uppercase tracking-[0.25em] text-sm mb-4">
@@ -235,10 +239,10 @@ export default function ProcessPage() {
               </div>
             </article>
           </div>
-          <div className="space-y-10 pt-10">
+          <div className="space-y-8 md:space-y-10 pt-8 md:pt-10">
             <article
               key={artifacts[1].title}
-              className="grid lg:grid-cols-[0.8fr_1.2fr] gap-6 items-center  p-5 sm:p-7"
+              className="grid lg:grid-cols-[0.8fr_1.2fr] gap-6 items-center p-5 md:p-7"
             >
               <div className="text-center lg:text-left">
                 <p className="text-secondary uppercase tracking-[0.25em] text-sm mb-4">
@@ -262,12 +266,12 @@ export default function ProcessPage() {
               </div>
             </article>
           </div>
-          <div className="space-y-10">
+          <div className="space-y-8 md:space-y-10">
             <article
               key={artifacts[2].title}
-              className="relative grid lg:grid-cols-12 gap-6 items-center bg-dark-secondary border border-white/10 rounded-3xl p-5 sm:p-7"
+              className="relative grid lg:grid-cols-12 gap-6 items-center bg-dark-secondary border border-white/10 rounded-3xl p-5 md:p-7"
             >
-              <div className="bg-dark-tertiary p-5 rounded-3xl lg:absolute lg:top-15 lg:left-75 lg:col-span-7 lg:col-start-6 lg:mr-10 text-center lg:text-left">
+              <div className="bg-dark-tertiary p-5 md:p-6 rounded-3xl lg:absolute lg:top-15 lg:left-75 lg:col-span-7 lg:col-start-6 lg:mr-10 text-center lg:text-left">
                 <p className="text-secondary uppercase tracking-[0.25em] text-sm mb-4">
                   Artifact 03
                 </p>
@@ -292,10 +296,10 @@ export default function ProcessPage() {
         </div>
       </section>
 
-      <section className="px-4 sm:px-6 lg:px-8 py-16">
-        <div className="bg-dark-tertiary border border-dark-secondary/10 rounded-4xl m-5 py-16">
-          <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-10 items-center">
-            <div className="bg-dark-primary border border-white/10 rounded-3xl p-4">
+      <section className="px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+        <div className="bg-dark-tertiary border border-dark-secondary/10 rounded-4xl md:m-5 py-8 md:py-16">
+          <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-8 md:gap-10 items-center p-5 md:p-7">
+            <div className="bg-dark-primary border border-white/10 rounded-3xl p-3 md:p-4">
               <PrototypeVideo />
             </div>
 
@@ -327,8 +331,8 @@ export default function ProcessPage() {
           </div>
         </div>
       </section>
-      <section className="px-4 sm:px-6 lg:px-8 py-12">
-        <div className="max-w-6xl mx-auto grid grid-cols-12 gap-10 items-center">
+      <section className="px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
           <div className="lg:col-span-8 lg:col-start-3">
             <p className="text-secondary uppercase tracking-[0.3em] text-sm mb-4">
               Testing
@@ -357,7 +361,7 @@ export default function ProcessPage() {
         </div>
       </section>
 
-      <section className="px-4 sm:px-6 lg:px-8 py-16 border-t border-white/10">
+      <section className="px-4 sm:px-6 lg:px-8 py-12 md:py-16 border-t border-white/10">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold mb-8">
             Projects You May Like
