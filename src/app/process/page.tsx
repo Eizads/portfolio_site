@@ -48,6 +48,14 @@ const outcomes = [
   "A prototype that made the product direction easier to validate before implementation.",
 ];
 
+const testing = [
+  {
+    title: "Testing and User Feedback",
+    description:
+      "The testing phase helped validate the dashboard structure, user flow, and prototype before moving into development. The user feedback helped refine the dashboard structure and user flow. For example after testing I decided to centralize the search bar at the top to make it more visible and easier to use.",
+  },
+];
+
 const artifacts = [
   {
     title: "User Flow",
@@ -66,8 +74,8 @@ const artifacts = [
   {
     title: "Mid-Fidelity Wireframes",
     description:
-      "The mid-fidelity pass tightened the dashboard layout, chart area, supporting cards, and responsive structure.",
-    image: "/stocks-dashboard-ux/mid-fidelity-wireframes.png",
+      "The mid-fidelity pass tightened the dashboard layout, chart area, supporting info, and responsive structure.",
+    image: "/stocks-dashboard-ux/mid-fidelity.png",
     alt: "Mid fidelity stocks dashboard wireframes",
   },
 ];
@@ -319,11 +327,40 @@ export default function ProcessPage() {
           </div>
         </div>
       </section>
+      <section className="px-4 sm:px-6 lg:px-8 py-12">
+        <div className="max-w-6xl mx-auto grid grid-cols-12 gap-10 items-center">
+          <div className="lg:col-span-8 lg:col-start-3">
+            <p className="text-secondary uppercase tracking-[0.3em] text-sm mb-4">
+              Testing
+            </p>
+            <h2 className="text-3xl sm:text-5xl font-bold mb-6">
+              Testing and User Feedback
+            </h2>
+            <p className="text-dark-accent text-lg leading-relaxed mb-6">
+              The testing phase helped validate the dashboard structure, user
+              flow, and prototype before moving into development. The user
+              feedback helped refine the dashboard structure and user flow.
+            </p>
+            <p className="text-dark-accent text-lg leading-relaxed mb-6">
+              For example, after feedback from users, I centralized the search
+              bar into its own dropdown overlay in the development phase. This
+              made search even more prominent and easier to use while still
+              allowing users to quickly search, compare matches, and open a
+              stock, all without losing context.
+            </p>
+            <p className="text-dark-accent text-lg leading-relaxed mb-6">
+              You can view the finalized versions of the stocks dashboard by
+              clicking the project links below and select the view live button
+              for each project.
+            </p>
+          </div>
+        </div>
+      </section>
 
       <section className="px-4 sm:px-6 lg:px-8 py-16 border-t border-white/10">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold mb-8">
-            You may also like
+            Projects You May Like
           </h2>
           <div className="grid md:grid-cols-3 gap-4">
             {relatedProjects.map((project) => (

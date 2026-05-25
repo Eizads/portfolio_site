@@ -336,25 +336,27 @@ export default function Home() {
                           </div>
                         </Link>
                       </Button>
-                      <Button
-                        variant="outline"
-                        className="text-secondary bg-transparent border-secondary hover:bg-secondary/10 hover:text-white hover:border-white"
-                      >
-                        <Link href="/process" rel="noopener noreferrer">
-                          <div className="flex items-center gap-2">
-                            <span
-                              aria-label="UX Process"
-                              className="block w-4 h-4 bg-current"
-                              style={{
-                                mask: "url('/figma_icon.svg') center / contain no-repeat",
-                                WebkitMask:
-                                  "url('/figma_icon.svg') center / contain no-repeat",
-                              }}
-                            />
-                            <span>UX Process</span>
-                          </div>
-                        </Link>
-                      </Button>
+                      {project.id !== 1 && (
+                        <Button
+                          variant="outline"
+                          className="text-secondary bg-transparent border-secondary hover:bg-secondary/10 hover:text-white hover:border-white"
+                        >
+                          <Link href="/process" rel="noopener noreferrer">
+                            <div className="flex items-center gap-2">
+                              <span
+                                aria-label="UX Process"
+                                className="block w-4 h-4 bg-current"
+                                style={{
+                                  mask: "url('/figma_icon.svg') center / contain no-repeat",
+                                  WebkitMask:
+                                    "url('/figma_icon.svg') center / contain no-repeat",
+                                }}
+                              />
+                              <span>UX Process</span>
+                            </div>
+                          </Link>
+                        </Button>
+                      )}
                     </div>
                   </div>
                 </DialogContent>
